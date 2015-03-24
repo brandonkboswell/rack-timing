@@ -9,7 +9,7 @@ That includes:
 * `thread_id`: For tracking requests across threads, (e.g. Puma)
 * `process_id`: For tracking requests across workers (e.g. Puma or Unicorn)
 * `request_id`: Correlate with your app (or Heroku router) logs
-* `pre_request`: Measure the time between `HTTP_X_REQUEST_START` and the start of your rack stack (similar to New Relic's 'reuqest queueing' metric)
+* `pre_request`: Measure the time between `HTTP_X_REQUEST_START` and the start of your rack stack (similar to New Relic's 'request queueing' metric)
 * `rack_in`: The time in the rack stack before your app sees the request
 * `app`: The time spent processing the request in your app
 * `rack_out`: The time spent going back out of the rack stack
